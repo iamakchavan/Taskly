@@ -1,0 +1,11 @@
+.git
+.env*
+.next
+node_modules
+README.md
+.vscode
+*.log
+.gitignore
+.eslintrc*
+.prettier*
+tsconfig.tsbuildinfo 

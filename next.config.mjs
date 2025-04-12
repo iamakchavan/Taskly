@@ -22,11 +22,26 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
+  // Optimize for production builds
+  swcMinify: true,
+  compiler: {
+    // Remove console.logs in production
+    removeConsole: process.env.NODE_ENV === 'production' ? {
+      exclude: ['error', 'warn'],
+    } : false,
   },
+  experimental: {
+    // Only enable features that actually improve build time
+    optimizeCss: true,
+    turbotrace: {
+      logLevel: 'error'
+    },
+    // Improved memory usage
+    memoryBasedWorkersCount: true
+  },
+  // Reduce output size
+  output: 'standalone',
+  poweredByHeader: false,
 }
 
 if (userConfig) {
