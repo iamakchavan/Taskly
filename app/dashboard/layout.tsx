@@ -179,7 +179,7 @@ export default function DashboardLayout({
         <div className="w-[200px] bg-white dark:bg-[#1a1a1a] border-r border-[#e3e3e3] dark:border-[#2a2a2a] flex flex-col animate-slide-in">
           <div className="p-6">
             <Link href="/dashboard">
-              <h1 className="text-[#2f70f2] text-xl font-bold hover-lift">SDash</h1>
+              <h1 className="text-[#2f70f2] text-xl font-bold hover-lift">Taskly</h1>
             </Link>
           </div>
 
