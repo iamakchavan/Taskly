@@ -13,8 +13,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "verbatimModuleSyntax": true,
-    "allowImportingTsExtensions": true,
     "plugins": [
       {
         "name": "next"
@@ -25,5 +23,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", ".next", "out"]
+  "exclude": ["node_modules"]
 }
